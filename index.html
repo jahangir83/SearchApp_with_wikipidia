@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous" />
+      <!-- font goole com -->
+      <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- link Css -->
+    <link rel="stylesheet" href="/dist/css/style.min.css">
+    <script src="/js/main.js" type="module"></script>
+    <title>Create Search App</title>
+</head>
+<body>
+    <main>
+        <h1 class="offscreen">Search Me A Wikipedia Powered Search Engine</h1>
+        <section class="searchEntry">
+            <h2 class="offscreen">Search Term Entry </h2>
+            <div class="logo" aria-hidden="true">
+                <span class="blue">S</span>
+                <span class="red">e</span>
+                <span class="yellow">a</span>
+                <span class="blue">r</span>
+                <span class="green">c</span>
+                <span class="red">h</span>
+                <span class="blue">M</span>
+                <span class="yellow">e</span>
+                <span class="red exclaim">!</span>
+                <!-- <i class="fas fa-search"></i> -->
+            </div>
+            <!-- Search Form Start -->
+            <form id="searchBar" class="searchBar" role="search">
+                <label for="search" class="offscreen" >Enter a search trem of phrase</label>
+                <input type="text" id="search" type="search"  autocomplete="off" role="searchbox">
+                <div id="clear" class=" none clear button" 
+                    role="button" tabindex="0" aria-label="clear search terms"
+                >
+                    
+                    <i class="fas fa-times"></i>
+                </div>
+                <button id="searchButton"
+                 class="button searchButton" 
+                 type="submit"
+                  aria-label="submit button">
+                  <i class="fas fa-search blue"></i> 
+                </button>
+
+            </form>            
+            <!-- Search Form End -->
+        </section>
+        <!-- Result Section  -->
+        <section class="results">
+            <h2 class="offscreen">Search Result</h2>
+            <div class="statsBar">
+                <div class="stats" id="stats" aria-live="assertive"></div>
+            </div>
+            <div id="searchResults" class="searchResults">
+
+                <!-- <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="">Jahangir</a>
+                    </div>
+
+                    <div class="resultContent">
+                        <div class="resultImage">
+                            <img src="https://en.savefrom.net/img/articles/youtube_com/new/homepage_en.jpg" alt="Jahangir">
+                        </div>
+                        <div class="resultText">
+                            <p class="resultDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, quisquam?</p>
+                        </div>
+                    </div>
+                </div> -->
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span aria-hidden="true" >&lt;&lt;</span> Powered by
+             <a href="https://www.wikipedia.org" target="_black">Wikipedia</a>
+             <span aria-hidden="true"> &gt;&gt; </span>
+        </p>
+    </footer>
+</body>
+</html>
